@@ -4,6 +4,16 @@ This file is a Chataigne Custom Module to scan a folder for audio files and crea
 Sequences, A State Machine and a Conductor for Use with a big GO button, intended 
 for sequential cueing in live theatrical performances.
 
+For initial adopters, there is a tutorial/demo video showing the use of the script, as well as a complete show
+control sample at: https://youtu.be/KZS1hiNow-A
+
+Perhaps the greatest takeaway from the video is that it took appx 52 minutes to describe the show control system,
+however the process of taking a folder full of audio files and generating all the sequences, audio and trigger 
+layers, trigger associations, the conductor and its associated elements in the state machine and the transport, which
+would take approximately another hour of manual labor, was reduced to about 15 seconds. That is likely the shortest 
+segment of the entire video. The point there is that the benefit of the script is to reduce or eliminate the manual labor
+that is required to get you to the point of the creative elements - so you can get on with the creative elements.
+
 Although not required, if you like the idea of the legacy Dashboard, you can use the "baseline.noisette" project
 file to start your own project and it will include a functional transport panel as a template. As the development
 of the web-dashboard module is evolving, this legacy Dashboard will likely be depreciated, hence the reason for it
