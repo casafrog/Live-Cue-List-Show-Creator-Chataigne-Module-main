@@ -1,0 +1,75 @@
+{
+  "name":"LCLShowCreator",
+  "type":"Empty",
+	"path":"Helpers",  
+  "version":"2.0.0",
+  "description":"Scans a folder for audio files and creates Sequences, A State Machine and a Conductor for Use with a big GO button, intended for sequential cueing in live theatrical performances. Ted Hyde, 2026",
+  "url":"https://github.com/casafrog/CF-LCLShowCreator",
+  "downloadURL":"https://github.com/casafrog/CF-LCLShowCreator.git",
+
+  "hasInput":true,
+	"hasOutput":true,
+  "hideDefaultCommands":false,
+    "defaults":
+  {	
+    "autoAdd":false
+  },
+
+  "parameters":
+  {
+    "Erase Prior Cues":
+    {
+      "type": "Boolean",
+      "default": false
+    },
+    "Build Type": 
+    {
+      "type":"Enum", "options": 
+      {
+        "Audio Master Controller": "0",
+        "Lighting Receiver": "1"
+      }
+    },
+    "Generate Show":{
+			"type":"Trigger"
+		},
+    "Asset Folder":{
+			"type":"String",
+			 "default":"Asset Folder"
+		},
+    "Add Trigger Layer":
+    {
+      "type": "Boolean",
+      "default": true
+    },
+    "Outbound Trigger Module Name":{
+			"type":"String",
+			 "default":""
+		},
+    "Outbound Trigger Command":{
+			"type":"String",
+			 "default":"/sequences/%/play"
+		},
+    "Trigger Time":
+    {
+      "type":"Float",
+      "default": 0.0
+    }
+
+  },
+
+  "hideDefaultParameters": [ "autoAdd"],
+
+  "scripts": 
+  [
+    "LCLShowCreator.js"
+  ],
+
+  "values":
+  {
+  },
+
+  "commands":
+  {
+  }
+}
