@@ -40,26 +40,35 @@ However for your convenience a sample trigger is placed at the start time of eve
 at your leisure).
 
 REQUIREMENTS PRIOR TO OPERATION: 
+
     1. You MUST have your show control trigger modules and audio output modules defined prior.
+    
     2. Your primary Sound Card will be chosen for output automatically, however that is easily changable at the per-state level 
         in the audio track properties.
+        
     3. Before running the script, select the BUILD TYPE in the module's properties inspector. The Lighting Receiver creates additional 
         parameters.
+        
     4. Check and prefill both the (inbound/outbound) Trigger Module Names and Commands to match your scenario. If the modules cannot
         be found, you will receive an error. 
+        
     5. For Audio Master Outbound Command and Lighting Receiver Inbound Command you can leave those defaults (/sequences/%/play) as defined
         since those must match between the Controller and the Receiver.
+        
     6. Please place all your audio source files in a folder at the same level as your Chaitiagne project (.noisette) file. This will allow you
         to take advantage of relative file paths instead of having to deal with absolute file path corrections, especially if you want to 
         move/copy files between different PCs or operating systems. For example, all the sound files in a folder called "audio_assets" will suffice.
+        
     7. Filename punctuation is IMPORTANT! For the "automatic" convenience, please avoid all the dangerous characters in a file name. Chataigne's internal
         object naming will typically get rid of spaces, auto-lowercase the first character, then sentence case the remaining word objects. You can safely
         use spaces and underscores, but other punctuation is best avoided. Additionally, some characters in OSC commands are prohibited, so stick with
         spaces and underscores.
+        
     8. The script will numeric-alpha ascending sort the file names found in the folder and begin adding in that sequence. Thus, if you want an easy 
         way to have your cues in sequence, edit the filenames prior to include a sequence number at the beginning )1...02...03 etc) . This does NOT 
         have to be any particular cue number, just an arbitrary value. If your organizational skills permit and it is also the cue number, 
         that is perfectly fine.
+
 
 A simple use case: audio has 15 full-length musical cues. They are named in a folder numerically. Running the Audio Master 
 function will build the states with an audio layer, a trigger layer, a single OSC "go" command on that layer, the state machine, a conductor
