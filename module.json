@@ -4,8 +4,8 @@
 	"path":"Helpers",  
   "version":"2.0.0",
   "description":"Scans a folder for audio files and creates Sequences, A State Machine and a Conductor for Use with a big GO button, intended for sequential cueing in live theatrical performances. Ted Hyde, 2026",
-  "url":"https://github.com/casafrog/CF-LCLShowCreator",
-  "downloadURL":"https://github.com/casafrog/CF-LCLShowCreator.git",
+  "url":"https://github.com/casafrog/Live-Cue-List-Show-Creator-Chataigne-Module-main",
+  "downloadURL":"https://github.com/casafrog/Live-Cue-List-Show-Creator-Chataigne-Module-main.git",
 
   "hasInput":true,
 	"hasOutput":true,
