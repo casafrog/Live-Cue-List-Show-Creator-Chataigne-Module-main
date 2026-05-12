@@ -3,7 +3,7 @@
   "type":"Empty",
 	"path":"Helpers",  
   "version":"2.0.0",
-  "description":"Scans a folder for audio files and creates Sequences, A State Machine and a Conductor for Use with a big GO button, intended for sequential cueing in live theatrical performances. Ted Hyde, 2026",
+  "description":"Scans a folder for audio files and creates Sequences, A State Machine and a Conductor for Use with a big GO button, intended for sequential cueing in live theatrical performances. Ted Hyde, 2026   See links for more info and tutorial videos at the github repo, click link below:",
   "url":"https://github.com/casafrog/Live-Cue-List-Show-Creator-Chataigne-Module-main",
   "downloadURL":"https://github.com/casafrog/Live-Cue-List-Show-Creator-Chataigne-Module-main.git",
 
